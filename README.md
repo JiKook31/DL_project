@@ -24,11 +24,12 @@ The outcomes will be:
 * По  этим  показателям  еще  никто  не  превзошел  производителей  Apple.
 
 ## Tools
-**Language** - Python
+**Language** - Python 3
 **VCS** - GitHub
 **Board** - GitHub project board
 **Report writing** - HackMD
 **Communication** - Telegram
+**Documents storage** - Google Drive
 
 ## Agile organization
 * Daily stand-ups

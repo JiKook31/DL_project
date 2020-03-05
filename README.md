@@ -24,11 +24,11 @@ The outcomes will be:
 * По  этим  показателям  еще  никто  не  превзошел  производителей  Apple.
 
 ## Tools
-**Language** - Python 3
-**VCS** - GitHub
-**Board** - GitHub project board
-**Report writing** - HackMD
-**Communication** - Telegram
+**Language** - Python 3\
+**VCS** - GitHub\
+**Board** - GitHub project board\
+**Report writing** - HackMD\
+**Communication** - Telegram\
 **Documents storage** - Google Drive
 
 ## Agile organization
@@ -47,3 +47,5 @@ The outcomes will be:
 	4.1. The team reviews completed/failed tasks.\
 	4.5. "Presenting" work for the "stakeholders": writing a report for the professor.\
 	4.6. Reflecting on the past sprint: what went right, what went wrong, what could be improved.\
+
+**Product backlog** is available [in this document.](https://docs.google.com/document/d/1oadHdlKemfdsWWG--NHEUlqlxM8VoyWGKKxPRNUK_io/edit?usp=sharing)

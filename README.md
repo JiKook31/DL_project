@@ -32,6 +32,10 @@ The outcomes will be:
 **Documents storage** - Google Drive
 
 ## Agile organization
+**Roles:** \
+Product owner: Vladimir Ivanov \
+Scrum master: Alternating b/w Alina and Alsu \
+Development team: Alina, Alsu + 2 other students \
 1. Sprint 0: laying out **product backlog** (collecting user stories).
 2. **Sprint planning**\
 	2.1 Discuss *user stories* to be moved from the Product backlog to the **sprint backlog**.\

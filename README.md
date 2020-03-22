@@ -35,12 +35,12 @@ The outcomes will be:
 **Roles:** \
 Product owner: Vladimir Ivanov \
 Scrum master: Alternating b/w Alina and Alsu \
-Development team: Alina, Alsu + 2 other students \
+Development team: Alina, Alsu + 2 other students 
 1. Sprint 0: laying out **product backlog** (collecting user stories).
 2. **Sprint planning**\
 	2.1 Discuss *user stories* to be moved from the Product backlog to the **sprint backlog**.\
 	2.2. Prepare sprint backlog. Distribute stories, bugs, tasks.\
-	2.3. Agree on **goal** of sprint.\
+	2.3. Agree on **goal** of sprint.
 3. **Daily Standups**\
 	3.1. Each team meber gives answers to three questions:\
 		* What have I done yesterday that will make the team closer to the sprint goal?\
@@ -50,6 +50,6 @@ Development team: Alina, Alsu + 2 other students \
 4. **Spring review + retrospective**\
 	4.1. The team reviews completed/failed tasks.\
 	4.5. "Presenting" work for the "stakeholders": writing a report for the professor.\
-	4.6. Reflecting on the past sprint: what went right, what went wrong, what could be improved.\
+	4.6. Reflecting on the past sprint: what went right, what went wrong, what could be improved.
 
 **Product backlog** is available [in this document.](https://docs.google.com/document/d/1oadHdlKemfdsWWG--NHEUlqlxM8VoyWGKKxPRNUK_io/edit?usp=sharing)

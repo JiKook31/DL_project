@@ -53,3 +53,8 @@ Development team: Alina, Alsu + 2 other students
 	4.6. Reflecting on the past sprint: what went right, what went wrong, what could be improved.
 
 **Product backlog** is available [in this document.](https://docs.google.com/document/d/1oadHdlKemfdsWWG--NHEUlqlxM8VoyWGKKxPRNUK_io/edit?usp=sharing)
+
+## Prpgress
+
+### Sprint 2 burndown chart
+https://docs.google.com/spreadsheets/d/e/2PACX-1vQCSDKOa81TX43Hge2rS20bQrY0QDnXLxYFWPjh4HEBgoPcogHZfafJJf5Bx54Bm9NaTSAHJJw8tHyg/pubchart?oid=1591942575&format=interactive

@@ -102,3 +102,6 @@ model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accur
 model.fit(X_train, np.array(y_train), batch_size=32, epochs=1, validation_split=0.2, verbose=1)
 
 model.save("model.pt")
+
+import os
+print(os.path.abspath("model.pt"))

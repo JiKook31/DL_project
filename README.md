@@ -1,5 +1,7 @@
 # STAP: Simultaneous Translation And Paraphrase
 
+![CI](https://github.com/JiKook31/DL_project/workflows/CI/badge.svg)
+
 Machine translation systems typically produce a **single output**, but in certain cases, it is desirable to have **many possible translations** of a given input text.
 
 The **goal** is to use Deep Learning models and generate high-coverage set of plausible translations from English to Russian. 

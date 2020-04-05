@@ -1,3 +1,6 @@
 .DS_Store
 rltc/
 .ipynb_checkpoints/
+.idea/
+model.pt
+dataset.csv

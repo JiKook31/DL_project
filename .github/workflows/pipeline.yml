@@ -30,14 +30,35 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
     # Runs a building od a model
     - name: Run a model building
       run: python model_build.py
-
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
         name: model_file
         path: model.pt
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check-out the repository
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    # Runs a building od a model
+    - name: Performing tests
+      run: python model_build.py
+    - name: Download artifact
+      uses: actions/download-artifact@v1
+      with:
+        name: model_file
+
 

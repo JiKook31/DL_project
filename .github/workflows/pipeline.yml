@@ -35,9 +35,9 @@ jobs:
     - name: Run a model building
       run: python model_build.py
 
-    - name: 'Upload artifact'
+    - name: Upload artifact
         uses: ./
         with:
-          name: 'model_file'
+          name: model_file
           path: model.pt
 

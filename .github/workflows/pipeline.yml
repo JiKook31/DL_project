@@ -22,11 +22,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Check-out the repository
       uses: actions/checkout@v2
-#    - name: Upload artifact
-#      uses: actions/upload-artifact@v1.0.0
-#      with:
-#        name: model_file
-#        path: model.pt
     - name: Set up Python
       uses: actions/setup-python@v1
       with:
@@ -39,4 +34,10 @@ jobs:
     # Runs a building od a model
     - name: Run a model building
       run: python model_build.py
+
+    - name: Upload artifact
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: model_file
+          path: model.pt
 

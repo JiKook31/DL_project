@@ -40,6 +40,7 @@ jobs:
         path: model.pt
 
   test:
+    needs: [build]
     runs-on: ubuntu-latest
 
     steps:
@@ -53,12 +54,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    # Runs a building od a model
-    - name: Performing tests
-      run: python model_build.py
     - name: Download artifact
       uses: actions/download-artifact@v1
       with:
         name: model_file
+    - name: Performing tests
+      run: python test_model.py
+    
 
 

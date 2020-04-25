@@ -58,5 +58,5 @@ Development team: Alina, Alsu + 2 other students
 
 ## Progress
 
-### Sprint 2 burndown chart
+### Sprint 6 burndown chart
 ![resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vQCSDKOa81TX43Hge2rS20bQrY0QDnXLxYFWPjh4HEBgoPcogHZfafJJf5Bx54Bm9NaTSAHJJw8tHyg/pubchart?oid=1591942575&format=image)

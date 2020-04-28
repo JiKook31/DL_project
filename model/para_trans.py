@@ -16,6 +16,7 @@ def para_translate(sentence, num_paras=3):
     paraphraser = Predict(checkpoint='checkpoint_coco', directory='paraphrase/coco')
 
     sent_trans = translate(sentence, translator)
-    sent_paras = paraphrase(sent_trans, paraphraser, num_paras)
+    sent_paras = [sent_trans]
+    sent_paras.extend(paraphrase(sent_trans, paraphraser, num_paras))
 
     return sent_paras

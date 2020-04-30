@@ -2,15 +2,8 @@ import flask
 import telebot
 import time
 import logging
-from subprocess import run
 import os
-from datetime import datetime
-from mongo_db import CheckerDatabase
 import json
-import docker
-import traceback
-import signal
-import sys
 
 LOG_FORMAT = '%(levelname)s %(name)s:%(lineno)d:%(funcName)s: %(message)s'
 LOGGER = logging.getLogger(__name__)

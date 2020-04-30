@@ -1,6 +1,6 @@
 import tensorflow as tf
 from model.paraphrase.data import Data
-from seq2seq import Seq2seq
+from model.paraphrase.seq2seq import Seq2seq
 
 class Predict:
     def __init__(self, checkpoint='checkpoint', directory='coco'):

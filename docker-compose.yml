@@ -15,7 +15,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/volumes
     shm_size: 16g
-    memory: 16g
+    mem_limit: 16g
 
 
 

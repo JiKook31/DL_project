@@ -1,6 +1,6 @@
 numpy
 keras
 sklearn
-tensorflow
+tensorflow==1.15
 pyTelegramBotAPI
 flask

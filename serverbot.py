@@ -4,7 +4,7 @@ import time
 import logging
 import os
 import json
-from model.para_trans import  loadmodel, pata_translate_preloaded
+from model.para_trans import loadmodel, para_translate_preloaded
 
 LOG_FORMAT = '%(levelname)s %(name)s:%(lineno)d:%(funcName)s: %(message)s'
 LOGGER = logging.getLogger(__name__)
@@ -50,7 +50,7 @@ def webhook():
 def welcome_message(message):
     text = message.test
     LOGGER.info(f"Translating for {text} is started")
-    output = pata_translate_preloaded(translator,paraphraser, text)
+    output = para_translate_preloaded(translator,paraphraser, text)
     LOGGER.info(f"Translating for {text} is {output}")
     bot.send_message(chat_id=message.chat.id, text=output)
 

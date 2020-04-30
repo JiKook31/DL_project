@@ -7,3 +7,4 @@ RUN python3.6 -m pip install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp3
 RUN python3.6 -m pip --no-cache-dir install torchvision
 RUN python3.6 -m pip install sacremoses subword_nmt
 CMD python3.6 serverbot.py
+

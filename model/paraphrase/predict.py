@@ -1,5 +1,5 @@
 import tensorflow as tf
-from data import model.paraphrase.Data
+from model.paraphrase.data import Data
 from seq2seq import Seq2seq
 
 class Predict:

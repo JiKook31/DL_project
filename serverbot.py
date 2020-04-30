@@ -4,6 +4,7 @@ import time
 import logging
 import os
 import json
+from model.para_trans import  loadmodel, pata_translate_preloaded
 
 LOG_FORMAT = '%(levelname)s %(name)s:%(lineno)d:%(funcName)s: %(message)s'
 LOGGER = logging.getLogger(__name__)
@@ -28,6 +29,10 @@ WEBHOOK_URL_PATH = "/%s/" % (API_TOKEN)
 bot = telebot.TeleBot(API_TOKEN)
 server = flask.Flask(__name__)
 
+LOGGER.info("Loading model started")
+translator, paraphraser = loadmodel()
+LOGGER.info("Loading model finished")
+
 
 @server.route(WEBHOOK_URL_PATH, methods=['POST'])
 def webhook():
@@ -43,8 +48,11 @@ def webhook():
 
 @bot.message_handler(commands=['start', 'help'])
 def welcome_message(message):
-    text = 'Hello!'
-    bot.send_message(chat_id=message.chat.id, text=text)
+    text = message.test
+    LOGGER.info(f"Translating for {text} is started")
+    output = pata_translate_preloaded(translator,paraphraser, text)
+    LOGGER.info(f"Translating for {text} is {output}")
+    bot.send_message(chat_id=message.chat.id, text=output)
 
 
 

@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+  bot:
+    container_name: 'predictbot'
+    build: .
+    privileged: true
+    restart: on-failure
+    ports:
+      - "80:80"
+    env_file: $PWD/variables.env
+    environment:
+      - WORK_DIR=$PWD
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /var/lib/docker/volumes:/volumes
+
+
+
+

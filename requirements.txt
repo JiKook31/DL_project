@@ -2,3 +2,5 @@ numpy
 keras
 sklearn
 tensorflow
+pyTelegramBotAPI
+flask

@@ -29,17 +29,17 @@ WEBHOOK_URL_PATH = "/%s/" % (API_TOKEN)
 bot = telebot.TeleBot(API_TOKEN)
 server = flask.Flask(__name__)
 
-LOGGER.info("Loading model started")
-translator, paraphraser = None, None
-try:
-    translator, paraphraser = loadmodel()
-# if error occurred send 0 score for submission
-except Exception as e:
-    LOGGER.error(traceback.format_tb(sys.exc_info()[-1]))
-    LOGGER.info(traceback.format_tb(sys.exc_info()[-1]))
-    LOGGER.info(f"error: {e}")
-
-LOGGER.info("Loading model finished")
+# LOGGER.info("Loading model started")
+# translator, paraphraser = None, None
+# try:
+#     translator, paraphraser = loadmodel()
+# # if error occurred send 0 score for submission
+# except Exception as e:
+#     LOGGER.error(traceback.format_tb(sys.exc_info()[-1]))
+#     LOGGER.info(traceback.format_tb(sys.exc_info()[-1]))
+#     LOGGER.info(f"error: {e}")
+#
+# LOGGER.info("Loading model finished")
 
 
 @server.route(WEBHOOK_URL_PATH, methods=['POST'])
@@ -66,7 +66,9 @@ def welcome_message(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
-    text = 'echo'
+    text = '''On a fine summer evening, she danced to music.
+            A female waltzed to music on a serene summer evening.
+            She moved with a rhytm as the summer day declined.'''
     bot.reply_to(message, text=text)
 
 

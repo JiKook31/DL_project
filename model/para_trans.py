@@ -12,9 +12,16 @@ def translate(sent, translator):
     return translator(sent)
 
 def para_translate(sentence, num_paras=3):
+    translator, paraphraser = loadmodel()
+    return para_translate_preloaded(translator, paraphraser, sentence, num_paras=num_paras)
+
+
+def loadmodel():
     translator = torch.hub.load('pytorch/fairseq', 'transformer.wmt19.ru-en.single_model', tokenizer='moses', bpe='fastbpe')
     paraphraser = Predict(checkpoint='checkpoint_coco', directory='paraphrase/coco')
+    return translator, paraphraser
 
+def para_translate_preloaded(translator, paraphraser, sentence, num_paras=3):
     sent_trans = translate(sentence, translator)
     sent_paras = [sent_trans]
     sent_paras.extend(paraphrase(sent_trans, paraphraser, num_paras))

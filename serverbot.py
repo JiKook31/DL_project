@@ -4,6 +4,8 @@ import time
 import logging
 import os
 import json
+from model.para_trans import loadmodel, para_translate_preloaded
+
 
 LOG_FORMAT = '%(levelname)s %(name)s:%(lineno)d:%(funcName)s: %(message)s'
 LOGGER = logging.getLogger(__name__)
@@ -28,6 +30,10 @@ WEBHOOK_URL_PATH = "/%s/" % (API_TOKEN)
 bot = telebot.TeleBot(API_TOKEN)
 server = flask.Flask(__name__)
 
+LOGGER.info("Starting loading model")
+translator, paraphraser = loadmodel()
+LOGGER.info("Model Loaded")
+
 
 @server.route(WEBHOOK_URL_PATH, methods=['POST'])
 def webhook():
@@ -50,8 +56,11 @@ def welcome_message(message):
 
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
-    text = 'echo'
-    bot.reply_to(message, text=text)
+    text = message.text
+    LOGGER.info(f"Requested translate for '{text}'")
+    output = para_translate_preloaded(translator, paraphraser,text)
+    LOGGER.info(f"Translate for '{text}' is '{output}'")
+    bot.reply_to(message, text=output)
 
 
 if __name__ == '__main__':

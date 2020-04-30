@@ -33,12 +33,11 @@ LOGGER.info("Loading model started")
 translator, paraphraser = None, None
 try:
     translator, paraphraser = loadmodel()
-    # if error occurred send 0 score for submission
-    except Exception as e:
-
-        LOGGER.error(traceback.format_tb(sys.exc_info()[-1]))
-        LOGGER.info(traceback.format_tb(sys.exc_info()[-1]))
-        LOGGER.info(f"error: {e}")
+# if error occurred send 0 score for submission
+except Exception as e:
+    LOGGER.error(traceback.format_tb(sys.exc_info()[-1]))
+    LOGGER.info(traceback.format_tb(sys.exc_info()[-1]))
+    LOGGER.info(f"error: {e}")
 
 LOGGER.info("Loading model finished")
 

@@ -15,6 +15,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/volumes
     shm_size: 16g
+    oom-kill-disable: false
+    mem_limit: 16g
+    mem_swappiness: 20g
 
 
 

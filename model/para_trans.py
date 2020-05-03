@@ -9,7 +9,7 @@ def paraphrase(sent, paraphraser, num):
     return para_list
 
 def translate(sent, translator):
-    return translator(sent)
+    return translator.translate(sent)
 
 def para_translate(sentence, num_paras=3):
     translator, paraphraser = loadmodel()

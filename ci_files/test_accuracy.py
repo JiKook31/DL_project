@@ -13,7 +13,7 @@ model = load_model("model_file/model.pt")
 score = model.evaluate(X, np.array(y), verbose=0)
 
 if score[1] < 0.75:
-    print("Accuracy of the model is lower than required")
+	print(f"\033[1;31;40m Accuracy of the model is lower than required. It should be more than 75. Current is {score[1]*100} \n")
     exit(1)
 else:
-    print("Test on accuracy of the model is passed")
+	print("\033[1;32;40m Test on accuracy of the model is passed  \n")

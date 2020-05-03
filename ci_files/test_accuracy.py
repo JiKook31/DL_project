@@ -8,12 +8,7 @@ with open('x_set', 'rb') as fp:
 with open('y_set', 'rb') as fp:
     y = pickle.load(fp)
 
-try:
-    model = load_model("model_file/model.pt")
-except:
-    model = None
-    print("Error with model file. Model could not be loaded")
-    exit(1)
+model = load_model("model_file/model.pt")
 
 score = model.evaluate(X, np.array(y), verbose=0)
 

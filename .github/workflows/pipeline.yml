@@ -32,7 +32,7 @@ jobs:
         pip install -r requirements.txt
     # Runs a building od a model
     - name: Run a model building
-      run: python model_build.py
+      run: python ci_files/model_build.py
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:
@@ -58,8 +58,10 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: model_file
-    - name: Performing tests
-      run: python test_model.py
+    - name: Performing model loading test
+      run: python ci_files/test_model.py
+    - name: Performing accuracy test
+      run: python ci_files/test_accuracy.py
     
 
 

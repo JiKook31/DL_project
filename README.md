@@ -62,5 +62,6 @@ Development team: Alina, Alsu + 2 other students
 ![resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vQCSDKOa81TX43Hge2rS20bQrY0QDnXLxYFWPjh4HEBgoPcogHZfafJJf5Bx54Bm9NaTSAHJJw8tHyg/pubchart?oid=1591942575&format=image)
 
 ## Evaluation chart
-<iframe width="476" height="302" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHDLY6gFINy8nBgLJb81mLj9IkczivmAyML4zdw_dxAN6vNRxIOuSpkBkKgUA4ixQG_P8MFCwEXwbY/pubchart?oid=1546331004&amp;format=image">
-</iframe>
+
+<img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHDLY6gFINy8nBgLJb81mLj9IkczivmAyML4zdw_dxAN6vNRxIOuSpkBkKgUA4ixQG_P8MFCwEXwbY/pubchart?oid=1546331004&amp;format=image">
+</img>

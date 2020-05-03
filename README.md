@@ -1,6 +1,6 @@
 # STAP: Simultaneous Translation And Paraphrase
 
-![CI](https://github.com/JiKook31/DL_project/workflows/CI/badge.svg)
+[![CI](https://github.com/JiKook31/DL_project/workflows/CI/badge.svg)](https://github.com/JiKook31/DL_project/actions?query=workflow%3ACI)
 
 Machine translation systems typically produce a **single output**, but in certain cases, it is desirable to have **many possible translations** of a given input text.
 
@@ -60,3 +60,7 @@ Development team: Alina, Alsu + 2 other students
 
 ### Sprint 6 burndown chart
 ![resources](https://docs.google.com/spreadsheets/d/e/2PACX-1vQCSDKOa81TX43Hge2rS20bQrY0QDnXLxYFWPjh4HEBgoPcogHZfafJJf5Bx54Bm9NaTSAHJJw8tHyg/pubchart?oid=1591942575&format=image)
+
+## Evaluation chart
+<iframe width="476" height="302" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHDLY6gFINy8nBgLJb81mLj9IkczivmAyML4zdw_dxAN6vNRxIOuSpkBkKgUA4ixQG_P8MFCwEXwbY/pubchart?oid=1546331004&amp;format=image">
+</iframe>

@@ -5,3 +5,4 @@ rltc/
 model.pt
 dataset.csv
 cert/
+model/paraphrase/__pycache__/*

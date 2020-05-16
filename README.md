@@ -12,18 +12,11 @@ The outcomes will be:
 -   New **benchmarks** for Machine Translation and paraphrasing
 
 **Ideal result representation:**
-> **And  by  that  metric, no  one  has  impacted  Apple.**
+> **Погожим летним вечером она танцевала под музыку.**
 
-* И  в  этом  отношении  у  Apple  не  было  равных. 
-* По  этим  показателям  еще  никто  не  превзошел  производителей  Apple. 
-* И  по  этим  показателям  компания  Apple  является  лидирующей. 
-* Согласно  данной  точке  зрения, у  Apple  не  было  конкурентов. 
-* Если  судить  по  этим  показателям, никто  еще  не  сравнился  с  компанией  Apple. 
-* И  благодаря  таким  показателям  никто  не  смог  обойти  компанию  Apple.
-* И  этот  показатель  никак  не  повлиял  на  продукцию  Apple. 
-* И  это  никак  не  отразилось  на  Apple. 
-* И  согласно  статистическим  данным, ни  одной  компании  не  удалось  превзойти  Apple. 
-* По  этим  показателям  еще  никто  не  превзошел  производителей  Apple.
+* On a fine summer evening, she danced to music.
+* A female waltzed to music on a serene summer evening.
+* She moved with a rhytm as the summer day declined.
 
 ## Tools
 **Language** - Python 3\
@@ -65,3 +58,21 @@ Development team: Alina, Alsu + 2 other students
 
 <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHDLY6gFINy8nBgLJb81mLj9IkczivmAyML4zdw_dxAN6vNRxIOuSpkBkKgUA4ixQG_P8MFCwEXwbY/pubchart?oid=1546331004&amp;format=image">
 </img>
+
+## Quality Assessment
+
+The project was evaluated using Bilingual Evaluation Understudy (BLEU) score. BLEU score is a metric for evaluating a generated sentence to a reference sentence.
+
+Final scores are:
+* translation model: 51.0,
+* paraphrase model: 29.0.
+
+In other words, we achieved roughly State-Of-The-Art results in both of the models.
+
+Additionally, the accuracy of the model is regularly tested. It should be more than 75% after every commit.
+
+## Added Value
+
+The biggest value that was added for business is Telegram Bot that can translate Russian sentence into multiple English ones. Example of our bot can be seen below:
+
+![alt text](https://lh3.googleusercontent.com/L-iI9ZIAftweS1805qenAsUDn76Dgft_v-5htesGK-djvMu-D5ond6FzqDd2sNDNOjhAW4tI9Na4vxmAPkjMWwCJRIwjRfBMV-OpY4Du8aWCK7NJRS_i1riPuGFrTL5RfuuqI8wyLawKfVC1PgIGXlDi49Aj-ig8YPhV4nF429r1_hVAm8ZuDdxTyTzfl1aX2uT8SZgFmnEGwECHnExjY_lJiSGpLVTGwjneL5Z10nBAVMHRXU18Gk35FFA1pjLDWXq2ho6WawkNDqv5Gq3AYIk1i0rlM4LyUKBE78dOlCrNA1uTb-9TcL8L9Pry5KQpWw0oP4OQIHohY36i44sCfeovoeQdTzASlOVV0D5J-Z1QNMFQsIK8TbTKk_Yghor3GagJ06I-Tax3gN41qUH1Jjvajj9oUlhdW9aTM9uvgh2XUpS3PLRIomI9T5KXJOCWUTSSK29Z2W3izVLyCyES2JugC6YgtsczZoephtL09W4-1f3b1kBU59SZVOYmqwTaD-NoH5JuoeqvZwmdIliZn_uBtm1AIFI-89sQed8VRFFRWH5Kzy5w6U10ZJgFFhcVjx5NzRYaShqaVKLca-4ruyGthJb9rKJjanRDDV5ehNi5Nu8Icg3LhvnJkGEIb0dWvDUzFhywR1y4U5Sx4YkH8eNTubJk9_iyxdRFvHkzwRfZxFcIEJMeAC6lkIPfp-a1TGa04A=w2880-h1596-ft)

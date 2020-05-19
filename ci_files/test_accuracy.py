@@ -2,10 +2,10 @@ from keras.models import load_model
 import pickle
 import numpy as np
 
-with open('x_set', 'rb') as fp:
+with open('ci_files/x_set', 'rb') as fp:
     X = pickle.load(fp)
 
-with open('y_set', 'rb') as fp:
+with open('ci_files/y_set', 'rb') as fp:
     y = pickle.load(fp)
 
 model = load_model("model_file/model.pt")

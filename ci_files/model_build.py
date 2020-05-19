@@ -5,10 +5,10 @@ from keras.models import Model, Input
 from keras.layers import LSTM, Embedding, Dense, TimeDistributed, Dropout, Bidirectional
 
 
-with open ('x_set', 'rb') as fp:
+with open ('ci_files/x_set', 'rb') as fp:
     X = pickle.load(fp)
 
-with open ('y_set', 'rb') as fp:
+with open ('ci_files/y_set', 'rb') as fp:
     y = pickle.load(fp)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
